@@ -4,24 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe",
-      "server": "162.159.152.4",
+      "type": "vmess",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "89.39.161.157",
       "server_port": 443,
-      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "rayan-007.maxima.dpdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "aksai.org",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
+        "path": "/linkvws",
         "headers": {
-          "Host": "rayan-007.maxima.dpdns.org"
+          "Host": "aksai.org"
         }
       }
     },
@@ -30,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
