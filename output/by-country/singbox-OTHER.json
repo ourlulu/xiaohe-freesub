@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "57.129.130.57",
-      "server_port": 52014,
-      "uuid": "c5a761f7-d009-499f-952c-e256bf3fa829",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "ccs2g.pai50288.uk",
+      "server_port": 443,
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
       "tls": {
         "enabled": true,
-        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
-        "insecure": false
+        "server_name": "ccs2g.pai50288.uk",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-        }
+        "path": "/pai50288"
       }
     },
     {
@@ -27,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
