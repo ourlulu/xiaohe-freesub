@@ -5,18 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: 149.33.30.176
-  port: 443
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16317
   udp: true
-  type: vless
-  uuid: 5fffad1b-10f0-41ff-abe7-e5a92696d5ef
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rk_iTiKEWYK02oF8lCIXrVlM7pWMSYX-Iuaz6Eat5lI
-    short-id: 4b26322b354bd74e
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
