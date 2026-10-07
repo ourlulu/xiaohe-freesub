@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇴 DO 01 - xiaohe",
-      "server": "181.36.229.212",
+      "tag": "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe",
+      "server": "31.129.22.141",
       "server_port": 443,
-      "uuid": "489f1717-d3c7-4940-ad68-bdbdbab857f4",
+      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "x.m-90.xyz",
-        "insecure": false,
+        "server_name": "pt-root.sworkingvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "t.me/TEAMNETGRATISCOL",
-        "headers": {
-          "Host": "x.m-90.xyz"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
+          "short_id": "15bcc0a77c3cacdf"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇴 DO 01 - xiaohe"
+        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇴 DO 01 - xiaohe"
+        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
