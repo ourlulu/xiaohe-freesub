@@ -13,15 +13,7 @@
       "tls": {
         "enabled": true,
         "server_name": "co-pl.speedtec.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI",
-          "short_id": "226509f017e4c36d"
-        }
+        "insecure": false
       }
     },
     {
