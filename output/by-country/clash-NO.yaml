@@ -11,17 +11,31 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇳🇴 挪威 (Norway) 02 - xiaohe
+  server: 79.182.39.35
+  port: 25548
+  udp: true
+  type: vless
+  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
+  tls: true
+  reality-opts:
+    public-key: lceynvFy326oU4ew9OPR7079m-L5ZcFELgCl0sqxU2M
+    short-id: bceb5b2197b76818
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
+  - 🇳🇴 挪威 (Norway) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
+  - 🇳🇴 挪威 (Norway) 02 - xiaohe
 rules:
 - MATCH,PROXIES
