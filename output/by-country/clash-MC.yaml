@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇴 挪威 (Norway) 01 - xiaohe
-  server: 45.12.63.39
+- name: 🇲🇨 MC 01 - xiaohe
+  server: 104.194.148.125
   port: 443
   udp: true
   type: vless
-  uuid: 26f751bc-2edc-4338-9c3f-abeb32aba3b7
+  uuid: 167539f8-88ff-46b3-955c-4c8f7bf0f296
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
-  servername: a6sh06nn94.edgecache.click
-  client-fingerprint: firefox
+    public-key: 5Xgf3UO6yZb7gCK3R3GULk8jyNIp7Sr-26YXZfSW71c
+    short-id: 13975a8e0bd50e7c
+  servername: suffolkprimarycare.uk
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇴 挪威 (Norway) 01 - xiaohe
+  - 🇲🇨 MC 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇴 挪威 (Norway) 01 - xiaohe
+  - 🇲🇨 MC 01 - xiaohe
 rules:
 - MATCH,PROXIES
