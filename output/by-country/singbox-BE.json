@@ -5,24 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "104.234.239.139",
+      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
+      "server": "93.88.206.70",
       "server_port": 443,
-      "uuid": "70756c73-0000-4000-8000-650000000000",
+      "uuid": "44ddb84a-f152-47ef-a970-fd63f2df9b30",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "parsa-panel-u48we.wotic15356.workers.dev",
+        "server_name": "pulse.sevka.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/pulse",
-        "headers": {
-          "Host": "parsa-panel-u48we.wotic15356.workers.dev"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -31,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
