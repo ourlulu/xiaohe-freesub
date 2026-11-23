@@ -12,6 +12,31 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: 88.216.60.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: ios
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: 138.124.86.230
+  port: 48115
+  udp: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  tls: true
+  servername: 138-124-86-230.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 138.199.55.230
   port: 1270
   udp: true
@@ -22,7 +47,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -33,7 +58,7 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   server: 62.93.166.184
   port: 1270
   udp: true
@@ -44,34 +69,50 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 138.124.86.230
-  port: 48115
-  udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: subgift.gcorecdn.com
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  server: sajed.kdns.fr
   port: 443
   udp: true
   type: vless
-  uuid: 63242a2a-7bdb-4775-bc3f-65c2f260f224
-  tls: true
-  servername: subgift.gcorecdn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
   network: ws
   ws-opts:
-    path: /t.me-SubGift
+    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
     headers:
-      Host: subgift.gcorecdn.com
+      Host: sajed.kdns.fr
+- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+  server: 188.225.46.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: a077dc9a-712f-48ea-b75c-d94af64011ec
+  flow: xtls-rprx-vision
+  tls: true
+  servername: spb.b2ai.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
+  server: pl.galacticworld.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
+  servername: pl.galacticworld.online
+  client-fingerprint: qq
+- name: 🇸🇪 瑞典 (Sweden) 10 - xiaohe
+  server: m1.config7x.kz.ci
+  port: 26206
+  udp: true
+  type: hysteria2
+  password: Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-
+  sni: config7x.de5.net
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: vxvnmus9agdzduvz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,6 +124,10 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,5 +139,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 10 - xiaohe
 rules:
 - MATCH,PROXIES
