@@ -5,31 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.27.97.42
-  port: 8443
+  server: 104.21.94.203
+  port: 443
   udp: true
   type: vless
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   tls: true
-  servername: free.sahanwickramasinghe.com
+  servername: fr-free.fastestrelay.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /700gvl
     headers:
-      Host: free.sahanwickramasinghe.com
+      Host: fr-free.fastestrelay.com
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 172.64.150.43
-  port: 2052
+  server: 172.67.139.189
+  port: 443
   udp: true
   type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  tls: true
+  servername: fr-free.fastestrelay.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /rain1226
+    path: /700gvl
     headers:
-      Host: eu02.123450908.xyz
+      Host: fr-free.fastestrelay.com
 proxy-groups:
 - name: PROXIES
   type: select
